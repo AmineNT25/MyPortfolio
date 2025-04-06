@@ -22,6 +22,11 @@ body {
     background: linear-gradient(to right, var(--black), var(--blue));
 }
 
+button>img {
+    width: 48px;
+    height: 48px;
+    background: none;
+}
 a>img {
     width: 48px;
     height: 48px;
@@ -31,11 +36,12 @@ p>img {
     width: 15px;
 }
 
-li, li > a {
+nav > button {
     list-style-type: none;
     color: black;
     text-decoration: none;
     font-family: var(--font);
+    background: none;
 }
 
 nav {
@@ -126,11 +132,6 @@ article {
     padding: 10px;
 }
 
-main > article:hover {
-    background-color: var(--black);
-    border-radius: 10px;
-}
-
 article > h2 {font-size: 30px; font-family: var(--fontMain);}
 article > h4 {font-size: 25px; font-family: var(--font);}
 
@@ -164,6 +165,13 @@ article > div > p {
     width: 100%;
 }
 
+#projects > article > button {
+    width: fit-content;
+    font-size: 15px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
 footer {
     display: flex;
     flex-direction: column;
@@ -194,4 +202,5 @@ button:hover {
 .imageHover1, .imageHover2, .imageHover3, .imageHover4, .imageHover5, .imageHover6 {
     position: absolute;
     width: 100%;
+    z-index: 5;
 }
