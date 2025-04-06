@@ -1,77 +1,130 @@
 'use srict' ;
 
-document.querySelector('.homeNav').addEventListener('mouseover', function() {
+// Navigation Buttons
+const homeNav = document.querySelector('.homeNav') ;
+const cvNav = document.querySelector('.cvNav') ;
+const projectsNav = document.querySelector('.projectsNav') ;
+
+// Home button
+homeNav.addEventListener('mouseover', function() {
     document.querySelector('.home').classList.remove('hidden') ;
 })
-document.querySelector('.homeNav').addEventListener('mouseout', function() {
+homeNav.addEventListener('mouseout', function() {
     document.querySelector('.home').classList.add('hidden') ;
 })
+homeNav.addEventListener('click', function(e) {
+    e.preventDefault() ;
+    const target = document.querySelector('.homePage') ;
+    target.scrollIntoView({
+        behavior: 'smooth'
+    }) ;
+})
 
-
-document.querySelector('.cvNav').addEventListener('mouseover', function() {
+// CV button
+cvNav.addEventListener('mouseover', function() {
     document.querySelector('.cv').classList.remove('hidden') ;
 })
-document.querySelector('.cvNav').addEventListener('mouseout', function() {
+cvNav.addEventListener('mouseout', function() {
     document.querySelector('.cv').classList.add('hidden') ;
 })
+cvNav.addEventListener('click', function(e) {
+    e.preventDefault() ;
+    const target = document.querySelector('main') ;
+    target.scrollIntoView({
+        behavior: 'smooth'
+    }) ;
+})
 
-
-document.querySelector('.projectsNav').addEventListener('mouseover', function() {
+// Projects button
+projectsNav.addEventListener('mouseover', function() {
     document.querySelector('.projects').classList.remove('hidden') ;
 })
-document.querySelector('.projectsNav').addEventListener('mouseout', function() {
+projectsNav.addEventListener('mouseout', function() {
     document.querySelector('.projects').classList.add('hidden') ;
 })
+projectsNav.addEventListener('click', function(e) {
+    e.preventDefault() ;
+    const target = document.getElementById('projects') ;
+    target.scrollIntoView({
+        behavior: 'smooth'
+    }) ;
+})
 
+// modals
+const projectOne = document.querySelector('.project1') ;
+const projectTwo = document.querySelector('.project2') ;
+const projectThree = document.querySelector('.project3') ;
+const projectFour = document.querySelector('.project4') ;
+const projectFive = document.querySelector('.project5') ;
+const projectSix = document.querySelector('.project6') ;
 
-document.querySelector('.project1').addEventListener('mouseover', function() {
+projectOne.addEventListener('click', function() {
     document.querySelector('.imageHover1').classList.remove('hidden') ;
 })
-document.querySelector('.project1').addEventListener('mouseout', function() {
-    document.querySelector('.imageHover1').classList.add('hidden') ;
+document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && !projectOne.classList.contains('hidden')) {
+        document.querySelector('.imageHover1').classList.add('hidden') ;
+    }
 })
 
 
-
-document.querySelector('.project2').addEventListener('mouseover', function() {
+projectTwo.addEventListener('click', function() {
     document.querySelector('.imageHover2').classList.remove('hidden') ;
 })
-document.querySelector('.project2').addEventListener('mouseout', function() {
-    document.querySelector('.imageHover2').classList.add('hidden') ;
+document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && !projectTwo.classList.contains('hidden')) {
+        document.querySelector('.imageHover2').classList.add('hidden') ;
+    }
 })
 
 
 
-document.querySelector('.project3').addEventListener('mouseover', function() {
+projectThree.addEventListener('click', function() {
     document.querySelector('.imageHover3').classList.remove('hidden') ;
 })
-document.querySelector('.project3').addEventListener('mouseout', function() {
-    document.querySelector('.imageHover3').classList.add('hidden') ;
+document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && !projectThree.classList.contains('hidden')) {
+        document.querySelector('.imageHover3').classList.add('hidden') ;
+    }
 })
 
 
 
-document.querySelector('.project4').addEventListener('mouseover', function() {
+projectFour.addEventListener('click', function() {
     document.querySelector('.imageHover4').classList.remove('hidden') ;
 })
-document.querySelector('.project4').addEventListener('mouseout', function() {
-    document.querySelector('.imageHover4').classList.add('hidden') ;
+document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && !projectFour.classList.contains('hidden')) {
+        document.querySelector('.imageHover4').classList.add('hidden') ;
+    }
 })
 
 
-
-document.querySelector('.project5').addEventListener('mouseover', function() {
+projectFive.addEventListener('click', function() {
     document.querySelector('.imageHover5').classList.remove('hidden') ;
 })
-document.querySelector('.project5').addEventListener('mouseout', function() {
-    document.querySelector('.imageHover5').classList.add('hidden') ;
+document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && !projectFive.classList.contains('hidden')) {
+        document.querySelector('.imageHover5').classList.add('hidden') ;
+    }
 })
 
 
-
-document.querySelector('.project6').addEventListener('mouseover', function() {
+projectSix.addEventListener('click', function() {
     document.querySelector('.imageHover6').classList.remove('hidden') ;
 })
-document.querySelector('.project6').addEventListener('mouseout', function() {
-    document.querySelector('.imageHover6').classList.add('hidden') ;
+document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && !projectSix.classList.contains('hidden')) {
+        document.querySelector('.imageHover6').classList.add('hidden') ;
+    }
+})
+
+
+// return button
+document.querySelector('.return').addEventListener('click',function(e){
+    e.preventDefault() ;
+    const target = document.querySelector('section') ;
+    target.scrollIntoView({
+        behavior: 'smooth'
+    }) ;
 })
