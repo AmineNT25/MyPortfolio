@@ -226,7 +226,6 @@ button:hover {
         width: fit-content;
         border-radius: 10px;
     }
-    
     section > div > p {
         font-size: 15px;
         font-family: var(--fontMain);
@@ -238,6 +237,27 @@ button:hover {
         display: grid;
         grid-template-columns: 1fr;
         font-size: 20px;
+    }
+    article > h2 {font-size: 25px; font-family: var(--fontMain);}
+    article > h4 {font-size: 20px; font-family: var(--font);}
+    article > li {
+        font-size: 10px; 
+        font-family: var(--font);
+        list-style-type: disc;
+        text-align: center;
+        color: var(--lightbeige);
+    }
+    article > p, article > h5 {
+        font-family: var(--font);
+        font-size: 13px;
+    }
+    article > div > p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-size: 13px;
+        font-family: var(--font);
     }
     div#projects {
         display: grid;
