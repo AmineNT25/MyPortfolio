@@ -196,11 +196,19 @@ button:hover {
 .imageHover1, .imageHover2, .imageHover3, .imageHover4, .imageHover5, .imageHover6 {
     position: absolute;
     width: 100%;
-    z-index: 5;
+    z-index: 100;
+}
+
+button.imageHover1 {
+    width: fit-content;
+    z-index: 100;
+    padding: 10px;
+    margin: 10px;
+    right: 10px;
 }
 
 
-@media screen and (max-width: 450px) {
+@media (max-width: 450px) {
     button > img {
         width: 15px;
         height: 15px;
@@ -240,6 +248,7 @@ button:hover {
     }
     article > h2 {font-size: 25px; font-family: var(--fontMain);}
     article > h4 {font-size: 20px; font-family: var(--font);}
+
     article > li {
         font-size: 10px; 
         font-family: var(--font);
@@ -251,6 +260,7 @@ button:hover {
         font-family: var(--font);
         font-size: 13px;
     }
+
     article > div > p {
         display: flex;
         justify-content: center;
@@ -271,7 +281,7 @@ button:hover {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     section {
         display: flex;
         flex-direction: column;
