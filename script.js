@@ -4,6 +4,7 @@
 const homeNav = document.querySelector('.homeNav') ;
 const cvNav = document.querySelector('.cvNav') ;
 const projectsNav = document.querySelector('.projectsNav') ;
+const closeButton = document.querySelector('button.imageHover1') ;
 
 // Home button
 homeNav.addEventListener('mouseover', function() {
@@ -60,20 +61,24 @@ const projectSix = document.querySelector('.project6') ;
 
 projectOne.addEventListener('click', function() {
     document.querySelector('.imageHover1').classList.remove('hidden') ;
+    closeButton.classList.remove('hidden') ;
 })
 document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape' && !projectOne.classList.contains('hidden')) {
         document.querySelector('.imageHover1').classList.add('hidden') ;
+        closeButton.classList.add('hidden') ;
     }
 })
 
 
 projectTwo.addEventListener('click', function() {
     document.querySelector('.imageHover2').classList.remove('hidden') ;
+    closeButton.classList.remove('hidden') ;
 })
 document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape' && !projectTwo.classList.contains('hidden')) {
         document.querySelector('.imageHover2').classList.add('hidden') ;
+        closeButton.classList.add('hidden') ;
     }
 })
 
@@ -81,10 +86,12 @@ document.addEventListener('keydown', function (e) {
 
 projectThree.addEventListener('click', function() {
     document.querySelector('.imageHover3').classList.remove('hidden') ;
+    closeButton.classList.remove('hidden') ;
 })
 document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape' && !projectThree.classList.contains('hidden')) {
         document.querySelector('.imageHover3').classList.add('hidden') ;
+        closeButton.classList.add('hidden') ;
     }
 })
 
@@ -92,26 +99,31 @@ document.addEventListener('keydown', function (e) {
 
 projectFour.addEventListener('click', function() {
     document.querySelector('.imageHover4').classList.remove('hidden') ;
+    closeButton.classList.remove('hidden') ;
 })
 document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape' && !projectFour.classList.contains('hidden')) {
         document.querySelector('.imageHover4').classList.add('hidden') ;
+        closeButton.classList.add('hidden') ;
     }
 })
 
 
 projectFive.addEventListener('click', function() {
     document.querySelector('.imageHover5').classList.remove('hidden') ;
+    closeButton.classList.remove('hidden') ;
 })
 document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape' && !projectFive.classList.contains('hidden')) {
         document.querySelector('.imageHover5').classList.add('hidden') ;
+        closeButton.classList.add('hidden') ;
     }
 })
 
 
 projectSix.addEventListener('click', function() {
     document.querySelector('.imageHover6').classList.remove('hidden') ;
+    closeButton.classList.remove('hidden') ;
 })
 document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape' && !projectSix.classList.contains('hidden')) {
@@ -119,6 +131,30 @@ document.addEventListener('keydown', function (e) {
     }
 })
 
+closeButton.addEventListener('click', function(){
+    document.querySelector('.imageHover1').classList.add('hidden') ;
+    closeButton.classList.add('hidden') ;
+})
+closeButton.addEventListener('click', function(){
+    document.querySelector('.imageHover2').classList.add('hidden') ;
+    closeButton.classList.add('hidden') ;
+})
+closeButton.addEventListener('click', function(){
+    document.querySelector('.imageHover3').classList.add('hidden') ;
+    closeButton.classList.add('hidden') ;
+})
+closeButton.addEventListener('click', function(){
+    document.querySelector('.imageHover4').classList.add('hidden') ;
+    closeButton.classList.add('hidden') ;
+})
+closeButton.addEventListener('click', function(){
+    document.querySelector('.imageHover5').classList.add('hidden') ;
+    closeButton.classList.add('hidden') ;
+})
+closeButton.addEventListener('click', function(){
+    document.querySelector('.imageHover6').classList.add('hidden') ;
+    closeButton.classList.add('hidden') ;
+})
 
 // return button
 document.querySelector('.return').addEventListener('click',function(e){
