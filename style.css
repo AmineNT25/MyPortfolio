@@ -302,4 +302,7 @@ button.imageHover1 {
         justify-content: center;
         text-align: center;
     }
+    button.project1, button.project2, button.project3, button.project4, button.project5, button.project6 {
+        display: none;
+    }
 }
